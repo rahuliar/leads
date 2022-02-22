@@ -38,6 +38,23 @@ button:hover{
     background-color: blue;
 }
 /* <!------------------------------------ NAVIGATION BAR -----------------------------------> */
+nav {
+    justify-content: space-between;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    margin: 10px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav li a:hover{
+     color: #ff5f00;
+}
 /* <!--------------------------------------- BLOCK 1 ---------------------------------------> */
 .block1 .col-sm-8{
     padding-top: 10%;
@@ -70,6 +87,24 @@ button:hover{
     height: 40px;
 }
 /* <!--------------------------------------- BLOCK 2 ---------------------------------------> */
+.block2{
+    background-color: white;
+    color: var(--color);
+}
+.block2 .block2Content{
+ border-radius: 20px;
+ background-color: whitesmoke;
+ margin: 10px 0px ;
+ 
+}
+.block2 .block2Content .col-6{
+    padding: 0px !important;
+}
+.block2 img{
+    width: 100%;
+    height: 100%;
+    border-radius:0px ;
+}
 /* <!--------------------------------------- BLOCK 3 ---------------------------------------> */
 .block3{
     background-color: white;
@@ -119,7 +154,19 @@ button:hover{
     height: 60vh;
 }
 .block5 .slick-arrow{
-    display: none !important;
+    position: absolute;
+}
+.block5 .slick-prev{
+    top: 50%;
+    left:1%;
+    width: 100px;
+    z-index: 2;
+
+}
+.block5 .slick-next{
+    top: 50%;
+    right:1%;
+    width: 100px;
 }
 .block5Content {
     box-shadow: 0 4px 10px rgb(0 0 0 / 16%);
@@ -131,6 +178,33 @@ button:hover{
     border-radius: 25px;
 }
 /* <!--------------------------------------- BLOCK 6 ---------------------------------------> */
+.block6{
+    text-align: center;
+}
+.block6 .slider{
+    width: 65vw !important;
+}
+.block6 .slick-slide{
+    display: flex;
+    text-align: left;
+    width: 60vw;
+    height: 60vh;
+}
+.block6 .slick-arrow{
+    position: absolute;
+}
+.block6 .slick-prev{
+    top: 50%;
+    left:1%;
+    width: 100px;
+    z-index: 2;
+
+}
+.block6 .slick-next{
+    top: 50%;
+    right:1%;
+    width: 100px;
+}
 /* <!--------------------------------------- BLOCK 7 ---------------------------------------> */
 
 .block7{
@@ -164,9 +238,32 @@ footer>*{
          flex-direction: column;   
          padding-top:75px !important;
     }
+    .block2Content{
+        flex-direction: column;
+    }
+    .block2Content .span{
+        align-items: center !important;
+    }
+    .footer2{
+        width: 70% !important;
+        margin-top:30px ;
+    }
+    .footer3{
+        margin-top:30px ;
+    }
+}
+@media (max-width:990px) {
+    .block6 .slick-slide{
+        flex-direction: column;
+    }
+    button{
+        width: 100%;
+    }
 }
 @media (max-width:800px) {
-    
+    .block1 .backgroundRow{
+        background: var(--color);
+    }
     .block4{justify-content: center;
         align-items: center;
          flex-direction: column;   
@@ -175,7 +272,35 @@ footer>*{
         text-align: center;
     }
     .block4Blocks{
-        width: 65%;
+        width: 75%;
         margin-top:10px
+    }
+    .contentBlock6{
+        font-size: 80%;
+        padding: 0px !important;
+    }
+}
+@media (max-width:600px) {
+    .block4Blocks{
+        width: 90%;
+        margin-top:10px
+    }
+    .slick-arrow{
+        position: static !important;
+        width: 200px !important;
+    }
+    .block6 .slider{
+        width: 85vw !important;
+    }
+    .block6 .slick-slide{
+        display: flex;
+        text-align: left;
+        width: 80vw;
+        height: 60vh;
+    }
+}
+@media (max-width:310px) {
+    .contentBlock6{
+        display: none;
     }
 }
