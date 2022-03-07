@@ -16,7 +16,7 @@
     <!-- logo  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- css  -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="leads.css">
 </head>
 
 <body>
@@ -27,16 +27,21 @@
         </div>
         <div class="w-25 block blockColumn" style="align-items: end; margin-right: 2%;">
             <div onclick="humburger()">
-            <div id="line1" class="line"></div>
-            <div id="line2" class="line"></div>
-            <div id="line3" class="line"></div>
+                <div id="line1" class="line"></div>
+                <div id="line2" class="line"></div>
+                <div id="line3" class="line"></div>
             </div>
         </div>
     </nav>
     <!------------------------------------ NAVIGATION BAR -------------------------------->
     <nav class="block navbar">
+
         <div class="w-100">
-            <ul class="block" style="justify-content: end;">
+            <ul class="block" style="justify-content: space-between;">
+                <div class="logo block w-25" style="justify-content: start; margin-left: 2%;">
+                    <img src="https://leadschool.in/wp-content/uploads/2021/06/logo.svg" alt="" height="100"
+                        width="100">
+                </div>
                 <li><a href="#">Why lead</a></li>
                 <li><a href="#">Find a School</a></li>
                 <li><a href="#">Curriculum</a></li>
@@ -357,13 +362,14 @@
             <h2>Find a LEAD Powered School near you</h2>
         </div>
         <button style="width:fit-content;">
-                <h3>Register Now</h3>
-            </button>
+            <h3>Register Now</h3>
+        </button>
     </div>
     <!--------------------------------------- FOOTER  --------------------------------------->
-    <footer>
-        <div class=" block footerRow1075">
-            <div class="col">
+    <footer class="d-flex felx-column justify-content-center">
+       <div class="container">
+        <div class="row">
+            <div class="col-11 col-md-6 mt-3">
                 <h5>Contact Us</h5>
                 <div class="row">
                     <div class="col-6" style="color: #ff5f00;">Email:</div>
@@ -388,21 +394,11 @@
                     <div class="col-6">8:00 AM to 9:00 PM
                         Monday to Saturday</div>
                 </div>
-                <div class="row">
-                    <h5>Privacy Policy</h5>
-                </div>
-                <div class="row block" style="justify-content: flex-start;">
-                    <i class="fa fa-linkedin footerLink" style="font-size:26px; width: fit-content;"></i>
-                    <i class="fa fa-facebook footerLink" style="font-size:26px; width: fit-content;"></i>
-                    <i class="fa fa-twitter footerLink" style="font-size:26px; width: fit-content;"></i>
-                    <i class="fa fa-instagram footerLink" style="font-size:26px; width: fit-content;"></i>
-                    <i class="fa fa-youtube footerLink" style="font-size:26px; width: fit-content;"></i>
-                </div>
             </div>
-            <div class="w-25 footer2">
+            <div class="col-11 col-md-6 mt-3">
                 <h5>Head office</h5>
                 <div class="row col-sm-10">
-                    <div class="w-100">401/501, 4th Floor, B Wing, Business Square, Andheri Kurla Road, Andheri
+                    <div>401/501, 4th Floor, B Wing, Business Square, Andheri Kurla Road, Andheri
                         (East),
                         Mumbai 400 093</div>
                 </div>
@@ -410,7 +406,23 @@
                     <div class="w-100"> Find us on the map</div>
                 </div>
             </div>
-            <div class="col footer3">
+        </div>
+        <div class="row mt-3">
+            <div class="col-11 col-md-6 mt-3">
+                <div class="d-flex flex-column">
+                    <div class="row">
+                        <h5>Privacy Policy</h5>
+                    </div>
+                    <div class="row block" style="justify-content: flex-start;">
+                        <i class="fa fa-linkedin footerLink" style="font-size:26px; width: fit-content;"></i>
+                        <i class="fa fa-facebook footerLink" style="font-size:26px; width: fit-content;"></i>
+                        <i class="fa fa-twitter footerLink" style="font-size:26px; width: fit-content;"></i>
+                        <i class="fa fa-instagram footerLink" style="font-size:26px; width: fit-content;"></i>
+                        <i class="fa fa-youtube footerLink" style="font-size:26px; width: fit-content;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-md-6 mt-3">
                 <h5>Quick Links</h5>
                 <div class="row">
                     <div class="row">
@@ -445,30 +457,31 @@
                 </div>
             </div>
         </div>
+       </div>
     </footer>
     <script>
         // hamburger
-let i = 0;
-let line1=document.getElementById('line1');
-let line2=document.getElementById('line2');
-let line3=document.getElementById('line3');
-let navbar=document.querySelector('.navbar');
+        let i = 0;
+        let line1 = document.getElementById('line1');
+        let line2 = document.getElementById('line2');
+        let line3 = document.getElementById('line3');
+        let navbar = document.querySelector('.navbar');
 
-humburger = () => {
-    if (i == 0) {
-        line2.style.visibility = 'hidden';
-        line1.style.transform = 'rotate(-45deg)';
-        line3.style.transform = 'rotate(45deg)';
-        navbar.style.display='flex';
-        i = 1;
-    } else {
-        line2.style.visibility = 'visible';
-        line1.style.transform = 'rotate(0deg)';
-        line3.style.transform = 'rotate(0deg)';
-        navbar.style.display='none';
-        i = 0;
-    }
-}
+        humburger = () => {
+            if (i == 0) {
+                line2.style.visibility = 'hidden';
+                line1.style.transform = 'rotate(-45deg)';
+                line3.style.transform = 'rotate(45deg)';
+                navbar.style.display = 'flex';
+                i = 1;
+            } else {
+                line2.style.visibility = 'visible';
+                line1.style.transform = 'rotate(0deg)';
+                line3.style.transform = 'rotate(0deg)';
+                navbar.style.display = 'none';
+                i = 0;
+            }
+        }
         $('.center').slick({
             centerMode: true,
             centerPadding: '60px',
