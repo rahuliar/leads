@@ -12,7 +12,7 @@
 }
 body{
     background-color: var(--color);
-    /* font-family: "gotham",sans-serif; */
+    font-family: "gotham",sans-serif;
     color: white;
 }
 .block{
@@ -46,7 +46,9 @@ nav ul{
     list-style: none;
 }
 nav li{
-    font-size:20px;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
     margin: 10px;
 }
 nav li a{
