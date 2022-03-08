@@ -316,6 +316,10 @@ footer>*{
     .navbar .logo{
         display: none;
     }
+    .navbar .w-100.d-flex.justify-content-between{
+        justify-content: center !important;
+        align-items: center !important;
+    }
     .line{
         display:block;
     }
