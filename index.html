@@ -17,9 +17,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- css  -->
     <link rel="stylesheet" href="leads.css">
+    <style>
+        .topmostline ul{
+            display: flex;
+            position:relative;
+            right:10%;
+            list-style: none;
+            
+    }
+    .topmostline li a{
+       color: white;
+       text-decoration: none;
+       font-size: larger;
+    }
+    .topmostline li a:hover{
+        color: #ff5f00;
+    }
+    @media (max-width:450px) {
+
+        .topmostline ul{
+            right: 1%;
+        }
+        .topmostline li a{
+            font-size:small;
+        }
+    }
+    </style>
 </head>
 
 <body>
+   <!-------------------------------------stripeed------------------------------------->
+   <div class="topmostline w-100 d-flex justify-content-end bg-primary">
+        <ul class="m-0 mt-2">
+            <li class="p-2 ms-2 me-2"><a href="" style="color: #ff5f00;">Parents</a></li>
+            <li class="p-2 ms-2 me-2"><a href="">School</a></li>
+            <li class="p-2 ms-2 me-2"><a href="">Teachers</a></li>
+            <li class="p-2 ms-2 me-2"><a href="">About us</a></li>
+        </ul>
+   </div>
     <!------------------------------------ NAVIGATION BAR -------------------------------->
     <nav class="navbarupper block" style="justify-content: space-between;">
         <div class="logo block w-25" style="justify-content: start; margin-left: 2%;">
@@ -36,17 +71,42 @@
     <!------------------------------------ NAVIGATION BAR -------------------------------->
     <nav class="block navbar">
 
-        <div class="w-100">
-            <ul class="block" style="justify-content: space-between;">
-                <div class="logo block w-25" style="justify-content: start; margin-left: 2%;">
-                    <img src="https://leadschool.in/wp-content/uploads/2021/06/logo.svg" alt="" height="100"
-                        width="100">
-                </div>
-                <li><a href="#">Why lead</a></li>
-                <li><a href="#">Find a School</a></li>
-                <li><a href="#">Curriculum</a></li>
-                <li><a href="#">Student Event</a></li>
-                <li><button class="w-100">Register Now</button></li>
+        <div class="w-100 d-flex justify-content-evenly">
+            <div class="logo block w-25" style="justify-content: start; margin-left: 2%;">
+                <img src="https://leadschool.in/wp-content/uploads/2021/06/logo.svg" alt="" height="100"
+                    width="100">
+            </div>
+            <ul class="block" style="justify-content:end;">
+                <li>
+                    <a href="#" class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="fa fa-instagram" style="font-size: 30px;"></i>
+                        Why lead
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="fa fa-instagram" style="font-size: 30px;"></i>
+                        Find a School
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="fa fa-instagram" style="font-size: 30px;"></i>
+                        Curriculum
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="fa fa-instagram" style="font-size: 30px;"></i>
+                        Student Events
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="fa fa-instagram" style="font-size: 30px;"></i>
+                        Why lead
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -371,25 +431,25 @@
         <div class="row">
             <div class="col-11 col-md-6 mt-3">
                 <h5>Contact Us</h5>
-                <div class="row">
+                <div class="row p-3" style="border-bottom: 0.1px solid rgba(245, 245, 245, 0.247);">
                     <div class="col-6" style="color: #ff5f00;">Email:</div>
                     <div class="col-sm-4">
                         <div class="footerLink">partner@leadschool.in</div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row p-3"style="border-bottom: 0.1px solid rgba(245, 245, 245, 0.247);">
                     <div class="col-6" style="color: #ff5f00;">Connect via WhatsApp:</div>
                     <div class="col-6">
                         <div class="footerLink">+91 86828 33333</div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row p-3"style="border-bottom: 0.1px solid rgba(245, 245, 245, 0.247);">
                     <div class="col-6" style="color: #ff5f00;">Toll-free (Sales/ Support):</div>
                     <div class="col-6">
                         <div class="footerLink">18001032863</div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row p-3"style="border-bottom: 0.1px solid rgba(245, 245, 245, 0.247);">
                     <div class="col-6" style="color: #ff5f00;">Timings:</div>
                     <div class="col-6">8:00 AM to 9:00 PM
                         Monday to Saturday</div>

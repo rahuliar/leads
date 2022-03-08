@@ -303,6 +303,9 @@ footer>*{
     .navbar{
         display: none;
     }
+    .navbar i{
+        display:  none;
+    }
     .navbar ul{
         display: flex;
         flex-direction: column;
